@@ -8,7 +8,7 @@ void main() async {
   // Easy Localization ni ishga tushirish
   await EasyLocalization.ensureInitialized();
 
-  // Shared preferences olish
+  // Shared preferences  olish
   SharedPreferences prefs = await SharedPreferences.getInstance();
   // Saqlangan tilni olish
   String? savedLocale = prefs.getString('locale');
