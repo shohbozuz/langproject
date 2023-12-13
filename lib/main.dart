@@ -56,7 +56,7 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('hello_world').tr(), // 'hello_world' kalit so'zini o'qish
+            Text('hello_world').tr(), // 'hello_world's kalit so'zini o'qish
             Text("love").tr(),
             ElevatedButton(
               onPressed: () async {
@@ -64,7 +64,7 @@ class MyHomePage extends StatelessWidget {
                 context.setLocale(Locale('uz', 'UZ'));
                 saveLocale('uz_UZ'); // Saqlash
               },
-              child: Text("O'zbek tili"),
+              child: Text("uzbek".tr()),
             ),
             ElevatedButton(
               onPressed: () async {
@@ -72,15 +72,15 @@ class MyHomePage extends StatelessWidget {
                 context.setLocale(Locale('ru', 'RU'));
                 saveLocale('ru_RU'); // Saqlash
               },
-              child: Text('Русский язык'),
+              child: Text('russian'.tr()),
             ),
             ElevatedButton(
               onPressed: () async {
-                // Tillarni almashish
+                // Tillarni almashish uchun
                 context.setLocale(Locale('en', 'US'));
                 saveLocale('en_US'); // Saqlash
               },
-              child: Text('English'),
+              child: Text('english'.tr()),
             ),
           ],
         ),
